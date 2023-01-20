@@ -6,9 +6,9 @@ services:
     volumes:
       - './client.pem:/client.pem'
     environment:
-      - "HOST=192.168.103.180"
-      - "TOKEN=UojOceUtnvtaxpiY"
-      - "RTSP_URL=rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream"
+      - "HOST=192.168.1.1"
+      - "TOKEN=JECT0AWPkFjfXSxznDN8uiiRIsIOnGk3"
+      - "RTSP_URL=rtsp://10.10.10.50/webcam/?action=stream"
     restart: always
   unifi-video-controller:
     image:  pducharme/unifi-video-controller
